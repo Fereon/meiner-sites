@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+
+        <meta name="author" content="Lorenz Zahn">
+        <meta name="description" content="Dies ist der öffentliche Auftritt von Lorenz Zahn.">
+        {% load static %}
+        <link rel="shortcut icon" href="{% static 'favicon.svg' %}" type="image/svg+xml" sizes="any">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+    </head>
+    <body>
+        <header>{% block header %}{% endblock %}</header>
+        <navbar>{% block navbar %}{% endblock %}</navbar>
+        <main>{% block main %}{% endblock %}</main>
+        <footer>{% block footer %}{% endblock %}</footer>
+    </body>
+</html>
