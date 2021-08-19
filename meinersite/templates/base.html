@@ -2,23 +2,24 @@
 <html lang="de-DE">
     <head>
         <meta charset="utf-8">
-        <title>{% block title %}{% endblock %}</title>
+        <title>{% block title %}{% endblock title %} | LORENZ ZAHN</title>
 
         <meta name="author" content="Lorenz Zahn">
-        <meta name="description" content="Dies ist der öffentliche Auftritt von Lorenz Zahn.">
+        <meta name="description" content="Dies ist der öffentliche Auftritt von Lorenz Zahn. Ein kleiner Spielplatz für Webinhalte und Entwicklung dieser.">
         {% load static %}
         <link rel="shortcut icon" href="{% static 'favicon.svg' %}" type="image/svg+xml" sizes="any">
         <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
     <body>
-        <header>{% block header %}{% endblock %}</header>
+        <header>{% block header %}{% endblock header %}</header>
         <nav>{% block nav %}
             <a href="{% url 'homepage:index' %}">Hauptseite</a>
-        {% endblock %}</nav>
-        <main>{% block main %}{% endblock %}</main>
+        {% endblock nav %}</nav>
+        <main>{% block main %}{% endblock main %}</main>
         <footer>{% block footer %}
             <a href="{% url 'homepage:privacy' %}">Datenschutzerklärung</a>
             <a href="{% url 'homepage:imprint' %}">Impressum</a>
-        {% endblock %}</footer>
+            <a target="_blank" href="https://github.com/Fereon/meiner-sites">Quellcode auf Github</a>
+        {% endblock footer %}</footer>
     </body>
 </html>
