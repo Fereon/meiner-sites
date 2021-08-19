@@ -12,7 +12,9 @@
     </head>
     <body>
         <header>{% block header %}{% endblock %}</header>
-        <nav>{% block nav %}{% endblock %}</nav>
+        <nav>{% block nav %}
+            <a href="{% url 'homepage:index' %}">Hauptseite</a>
+        {% endblock %}</nav>
         <main>{% block main %}{% endblock %}</main>
         <footer>{% block footer %}
             <a href="{% url 'homepage:privacy' %}">Datenschutzerklärung</a>
