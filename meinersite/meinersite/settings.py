@@ -26,7 +26,7 @@ with open( BASE_DIR / 'secret.txt' ) as secret_file:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['lorenz-zahn.de', 'www.lorenz-zahn.de', 'localhost']
 
 
 # Application definition
