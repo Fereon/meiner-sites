@@ -24,7 +24,7 @@ with open( BASE_DIR / 'secret.txt' ) as secret_file:
     SECRET_KEY = secret_file.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['lorenz-zahn.de', 'www.lorenz-zahn.de', 'localhost']
 
