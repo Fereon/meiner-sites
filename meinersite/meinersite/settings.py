@@ -24,9 +24,9 @@ with open( BASE_DIR / 'secret.txt' ) as secret_file:
     SECRET_KEY = secret_file.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['lorenz-zahn.de', 'www.lorenz-zahn.de', 'localhost']
+ALLOWED_HOSTS = ['lorenz-zahn.de', 'www.lorenz-zahn.de', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -139,10 +139,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # SSL
 
-SECURE_SSL_REDIRECT = True
+#SECURE_SSL_REDIRECT = True
 
-SESSION_COOKIE_SECURE = True
+#SESSION_COOKIE_SECURE = True
 
-CSRF_COOKIE_SECURE = True
+#CSRF_COOKIE_SECURE = True
 
-SECURE_HSTS_SECONDS = 60
+#SECURE_HSTS_SECONDS = 60
