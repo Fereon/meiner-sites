@@ -129,7 +129,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static/',
 ]
 
-STATIC_ROOT = "/var/www/lorenz-zahn.de/static/"
+STATIC_ROOT = '/var/www/lorenz-zahn.de/static/'
 
 
 # Default primary key field type
