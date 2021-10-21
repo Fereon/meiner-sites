@@ -8,13 +8,36 @@ html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media (orientation: landscape) {
+    body {
+        background-image: url("sky_landscape.jpg");
+    }
+}
+  
+@media (orientation: portrait) {
+    body {
+        background-image: url("sky_portrait.jpg");
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1280px) {
+    body {
+        background-image: url("sky_landscape_small.jpg");
+    }
+}
+  
+@media (orientation: portrait) and (max-width: 720px) {
+    body {
+        background-image: url("sky_portrait_small.jpg");
+    }
+}
+
 body {
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url("sky.jpg");
-    background-size: cover;
+    background-size: 100vw;
     color: var(--text-color);
 }
 
