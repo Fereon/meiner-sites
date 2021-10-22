@@ -49,6 +49,7 @@ body {
     flex-direction: column;
     background-size: 100vw;
     color: var(--color1);
+    text-align: justify;
 }
 
 nav {
