@@ -1,6 +1,8 @@
 :root {
-    --padding: max( calc(calc(100vw - 50em)/2) , 1em);
-    --text-color: #1B3DA6;
+    --padding: max( calc(calc(100vw - 60em)/2) , 1em);
+    --color1: #1A3BA5;
+    --color2: #295CB8;
+    --color3: #346ABF;
 }
 
 html {
@@ -46,19 +48,16 @@ body {
     display: flex;
     flex-direction: column;
     background-size: 100vw;
-    color: var(--text-color);
-}
-
-body > * {
-    padding: 0 var(--padding) 0 var(--padding);
+    color: var(--color1);
 }
 
 nav {
     flex: 0 1 auto;
-    background-color: #214DA6;
+    background-color: var(--color1);
     margin-bottom: 20vh;
     position: sticky;
     top: 0;
+    padding: 0 calc(var(--padding) - 1em);
 }
 
 nav a {
@@ -68,10 +67,25 @@ nav a {
     display: inline-flex;
 }
 
+nav a:hover {
+    background-color: var(--color2);
+}
+
+
+nav a:active {
+    background-color: var(--color3);
+}
+
 main {
     flex: 1 1 auto;
     background-color: white;
+    padding: 0 var(--padding);
 }
+
+main a {
+    color: var(--text-color);
+}
+
 
 footer {
     display: flex;
@@ -79,6 +93,7 @@ footer {
     flex: 0 1 auto;
     text-align: center;
     background-color: white;
+    padding: 0.5em var(--padding);
 }
 
 footer a {
